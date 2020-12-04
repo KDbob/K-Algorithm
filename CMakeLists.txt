@@ -3,4 +3,5 @@ project(K_Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(K_Algorithm LCS/main.cpp)
+add_executable(LCS LCS/main.cpp)
+add_executable(N-Queens N-Queens/main.cpp)
