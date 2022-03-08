@@ -1,24 +1,32 @@
+# 背景：n后问题（四后问题）
+
+![image-20220308155240741](N-Queens.assets/image-20220308155240741.png)
+
 ## 迭代回溯
 
 ```c++
-void IterativeBacktrack(void) {
-  int t = 1;
-  while (t > 0) {
-    if (f(n,t) <= g(n,t)){
-      for (int i = f(n,t); i <= g(n,t); i++){
-      x[t] = h(i);
-      if (Constrain(t)&&Bound(t)) {
-        if(Solution(t)){
-          OutPut(x);
-        } else {
-          t++;
+/*
+ * 迭代回溯
+ */
+void Queen::IterativeBacktrack() {
+    int t = 1;  // 递归深度
+    x[1] = 0;   // 将第一列的放置棋子（行）初始化
+    while (t > 0) {
+        x[t] += 1;
+        while ((x[t]<=n)&&!Place(t)) {  // 如果将要放置的行没有溢出，且不满足放置条件
+            x[t] += 1;
         }
-      } else {
-        t--;
-      }
+        if (x[t] <= n) {                // 如果这次放置的行满足条件
+            if (t==n){
+                sum++;            // 如果达到Solution条件，输出值
+            } else {
+                t++;                    // 递归深度+1
+                x[t] = 0;               // 将这次放置的不满足的棋子（行）初始化
+            }
+        } else {
+            t--;                        // 递归深度-1
+        }
     }
-    }
-  }
 }
 ```
 
@@ -58,4 +66,13 @@ friend class ClassTwo;
 ## 类的成员函数
 
 类的成员函数是指那些把定义和原型写在类定义内部的函数，就像类定义中的其他变量一样。类成员函数是类的一个成员，它可以操作类的任意对象，可以访问对象中的所有成员。
+
+# 局部搜索
+
+### 爬山法
+
+```c++
+n := s;
+LOOP: IF GOAL(n) THEN EXIT(SUCCESS);
+```
 

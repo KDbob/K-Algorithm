@@ -15,12 +15,12 @@ private:
     void IterativeBacktrack();
     int n; // 皇后个数
     int *x; // 当前解
-    long sum; // 当前已找到的可行方案数
+    int sum; // 当前已找到的可行方案数
 };
 
 /**
  * 判断放置的皇后是否正确
- * @param k
+ * @param k 第多少列
  * @return
  */
 bool Queen::Place(int k) {
@@ -57,8 +57,9 @@ void Queen::IterativeBacktrack() {
             x[t] += 1;
         }
         if (x[t] <= n) {                // 如果这次放置的行满足条件
-            if (t==n) sum++;            // 如果达到Solution条件，输出值
-            else {
+            if (t==n){
+                sum++;            // 如果达到Solution条件，输出值
+            } else {
                 t++;                    // 递归深度+1
                 x[t] = 0;               // 将这次放置的不满足的棋子（行）初始化
             }
@@ -69,7 +70,7 @@ void Queen::IterativeBacktrack() {
 }
 
 int nQueen(int n) {
-    Queen X;
+    Queen X{};
     X.n = n;
     X.sum = 0;
     int *p = new int[n + 1];
@@ -77,8 +78,8 @@ int nQueen(int n) {
         p[i] = 0;
     }
     X.x = p;
-//    X.Backtrack(1);   // 递归算法
-    X.IterativeBacktrack();     // 迭代算法
+    X.Backtrack(1);   // 递归算法
+//    X.IterativeBacktrack();     // 迭代算法
     delete []p;
     return X.sum;
 }
