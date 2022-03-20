@@ -1,6 +1,6 @@
 # BFS&DFS
 
-![image-20220208185655727](BFS&DFS.assets/image-20220208185655727.png)
+![image-20220208185655727](readme/image-20220208185655727.png)
 
 ## 1. 数据结构
 
