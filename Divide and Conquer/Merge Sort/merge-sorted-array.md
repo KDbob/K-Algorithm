@@ -2,7 +2,7 @@
 
 ## 问题描述：
 
-![image-20210202203109863](/Users/bob/Library/Application Support/typora-user-images/image-20210202203109863.png)
+![image-20210202203109863](readme.assets/image-20210202203109863.png)
 
 已有两个有序的数组，设分别为A和B。要得到合并后的有序数组C。
 
@@ -16,7 +16,7 @@
 
 #### 初始化（Step1）
 
-![image-20210202204311201](/Users/bob/Library/Application Support/typora-user-images/image-20210202204311201.png)
+![image-20210202204311201](readme.assets/image-20210202204311201.png)
 
 1. 先创建一个缓冲数组C（C的长度为m+n）
 
@@ -26,7 +26,7 @@
 
 #### 比较并填充（Step2）
 
-![image-20210202204928301](/Users/bob/Library/Application Support/typora-user-images/image-20210202204928301.png)
+![image-20210202204928301](readme.assets/image-20210202204928301.png)
 
 1. **比较数值**：比较 i 游标和 j 游标所指的元素值大小，将较小者填入C数组中。
 
@@ -38,7 +38,7 @@
 
 #### 将A or B 还未遍历的元素直接拼接到C（Step3）
 
-![image-20210202211129208](/Users/bob/Library/Application Support/typora-user-images/image-20210202211129208.png)
+![image-20210202211129208](readme.assets/image-20210202211129208.png)
 
 因为Step2中，A和B数组的长度不一定相同，并且遍历有先后顺序。因此一定存在A or B中还有未遍历完的元素的情形。
 

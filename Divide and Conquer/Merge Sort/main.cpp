@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Selector
+//  Merge Sort
 //
 //  Created by kaide on 2020/10/26.
 //  Copyright © 2020 kaide. All rights reserved.

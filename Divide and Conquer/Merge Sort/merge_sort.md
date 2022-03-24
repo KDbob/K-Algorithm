@@ -2,7 +2,7 @@
 
 归并排序也称为合并排序，本文详细介绍归并非递归的实现。
 
-![image-20210205122301714](/Users/bob/Library/Application Support/typora-user-images/image-20210205122301714.png)
+![image-20210205122301714](readme.assets/image-20210205122301714.png)
 
 ## 问题描述
 
@@ -20,7 +20,7 @@
 
 #### 基本思路：看作是一颗倒过来的满二叉树，两两成对
 
-![image-20210204172259582](/Users/bob/Library/Application Support/typora-user-images/image-20210204172259582.png)
+![image-20210204172259582](readme.assets/image-20210204172259582.png)
 
 这张图叙述了合并排序算法的基本思路，类似一棵倒放的二叉树。
 
@@ -65,7 +65,7 @@ merge_sort(A[], n) {
 
 ## 一般情形（数组的元素个数不一定是 $2^{i}$）
 
-![image-20210205103546756](/Users/bob/Library/Application Support/typora-user-images/image-20210205103546756.png)
+![image-20210205103546756](readme.assets/image-20210205103546756.png)
 
 如图可知，一般数组元素的个数不一定是 $2^{i}$个。右边多出的"10, 7, 2"子树可以视作一般情况的情形。
 

@@ -3,11 +3,12 @@ project(K_Algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
+add_executable(Quick-Sort "Divide and Conquer/Quick Sort/main.cpp")
 add_executable(N-Queens Searching/Backtrack/N-Queens/main.cpp)
 add_executable(LCS "Dynamic/LCS/main.cpp")
 add_executable(MatrixChain "Dynamic/MatrixChain/main.cpp")
 add_executable(Backtrack "Searching/Backtrack/N-Queens/main.cpp")
-add_executable(Selector "Divide/Selector/main.cpp")
+add_executable(Selector "Divide and Conquer/Merge Sort/main.cpp")
 
 add_executable(Climbing "Searching/Local Search/Climbing/main.cpp")
 add_executable(LocalSearch "Searching/Local Search/LocalSearch/main.cpp")

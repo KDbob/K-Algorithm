@@ -6,7 +6,7 @@
 > - 分治法的设计思想是：将一个难以直接解决的大问题，分割成一些规模较小的相同问题，以便各个击破，分而治之。
 > - 分治和递归像一对孪生的兄弟，经常同时应用在算法设计中。
 
-![image-20210205122301714](/Users/bob/Library/Application Support/typora-user-images/image-20210205122301714.png)
+![image-20210205122301714](readme.assets/image-20210205122301714.png)
 
 ## 分治法的基本思想
 
@@ -68,7 +68,7 @@ divide-and-conquer(P){
 
 下图介绍了二路归并的子问题“分”法
 
-![image-20210209104917076](/Users/bob/Library/Application Support/typora-user-images/image-20210209104917076.png)
+![image-20210209104917076](readme.assets/image-20210209104917076.png)
 
 怎么分，以及分到什么程度是需要考虑的
 
@@ -96,7 +96,7 @@ divide-and-conquer(P){
 
 ## 归并排序分治法的"分和治"
 
-![image-20210209104651633](/Users/bob/Library/Application Support/typora-user-images/image-20210209104651633.png)
+![image-20210209104651633](readme.assets/image-20210209104651633.png)
 
 图中描述了归并排序递归实现程序运行的过程：每对黑色的箭头代表“分”操作，每对墨蓝色的箭头代表“合”操作（也就是治）
 
