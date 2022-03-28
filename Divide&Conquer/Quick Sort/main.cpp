@@ -63,9 +63,9 @@ void QuickSort(int a[], int p, int r) {
 
 int main() {
     // 1.partition测试
-    int a[] = {8, 5, 3, 9, 12, 6, 4, 1, 10, 7, 2, 11};
+    int a[] = {8, 5, 3, 9, 12, 11, 4, 1, 10, 7, 2, 6};
 //    int q = Partition(a, 0, 11);
-//    int q2 = Partition2(a, 0, 11);
+    int q2 = Partition2(a, 0, 11);
     // 2.快速排序
     QuickSort(a, 0, 11);
     return 0;

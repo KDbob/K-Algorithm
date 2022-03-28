@@ -12,7 +12,7 @@
   - [归并排序的非递归实现](Divide%20Conquer/Merge Sort/merge_sort.md)
   - [合并两个有序的数组](Divide%20Conquer/Merge Sort/merge-sorted-array.md)
   
-- ### [快速排序](Divide and Conquer/Quick Sort)
+- ### [快速排序](Divide&Conquer/Quick Sort)
   
   - 划分partition
   
