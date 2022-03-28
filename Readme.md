@@ -6,11 +6,11 @@
 
 # 分而治之
 
-- ### [归并排序](Divide%20Conquer/Merge Sort)
+- ### [归并排序](Divide%20Conquer/MergeSort)
 
-  - [归并排序的递归实现](Divide%20Conquer/Merge Sort/readme.md)
-  - [归并排序的非递归实现](Divide%20Conquer/Merge Sort/merge_sort.md)
-  - [合并两个有序的数组](Divide%20Conquer/Merge Sort/merge-sorted-array.md)
+  - [归并排序的递归实现](Divide%20Conquer/MergeSort/readme.md)
+  - [归并排序的非递归实现](Divide%20Conquer/MergeSort/merge_sort.md)
+  - [合并两个有序的数组](Divide%20Conquer/MergeSort/merge-sorted-array.md)
   
 - ### [快速排序](Divide&Conquer/QuickSort)
   
