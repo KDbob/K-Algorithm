@@ -19,3 +19,5 @@ add_executable(N-Queens-SA-Test "Searching/Local Search/N-Queens-SA-Test/main.cp
 
 add_executable(local_search "Searching/Local Search/Searching/main.cpp")
 add_executable(RouletteChoice "Searching/Local Search/RouletteChoice/main.cpp")
+
+add_executable(Heapsort "Sorting/Heapsort/main.cpp")
